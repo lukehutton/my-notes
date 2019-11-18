@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower&display=swap);
+
+$note-bg-color: #ffc;
+$note-color: #000;
+$note-font-family: 'Indie Flower', cursive;
+
+body {
+  font-family: arial, sans-serif;
+  font-size: 100%;
+  margin: 3em;
+  background: #a8a8a8;
+  color: #fff;
+}
+
+.note-separator {
+  color: #919090;
+  background-color: #919090;
+  height: 1px;
+  border: none;
+}
+
+.note-title {
+  font-weight: bold;
+}
+
+.note-content {
+  font-family: $note-font-family;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.note-content-view {
+  white-space: pre-wrap;
+  font-family: $note-font-family;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.note {
+  text-decoration: none;
+  color: $note-color;
+  background: $note-bg-color;
+  display: block;
+  height: 10em;
+  width: 10em;
+  padding: 10px;
+  cursor: -webkit-grab;
+  -webkit-box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.2);
+
+  .actions {
+    background: #ededbe;
+    position: absolute;
+    font-size: 0.75em;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+
+    .delete {
+      display: inline-block;
+      color: #cd1519;
+      padding: 5px;
+    }
+  }
+}
+
+.note-view {
+  color: $note-color;
+  background: $note-bg-color;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  -webkit-box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.note-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 10px;
+  row-gap: 1em;
+}
+
+.nav {
+  margin-bottom: 10px;
+
+  .nav-title {
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+  .nav-action {
+    font-size: 1.25em;
+
+    .link {
+      cursor: pointer;
+      color: #fff;
+    }
+    .link:hover {
+      color: #e8e6e9;
+    }
+  }
+}
+
+.form-errors {
+  margin-top: 10px;
+  color: #cc0033;
+  display: block;
+  border-radius: 4px;
+  background-color: #fce4e4;
+  border: 1px solid #cc0033;
+  float: left;
+  font-size: 13px;
+  line-height: 20px;
+  width: 410px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  font-size: 20px;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
