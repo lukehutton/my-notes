@@ -6,7 +6,7 @@ Built with React, Redux, Node
 
 Clone this repository and run from the root directory:
 ```
-$ npm install
+$ npm run build
 ```
 
 ### Usage
